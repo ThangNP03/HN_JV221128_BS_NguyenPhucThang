@@ -58,7 +58,7 @@ public class BookManagement {
     public static void changeBookStatus(List<Book> list, Scanner input) {
         Boolean check = false;
         System.out.println("nhập vào id muốn thay đổi trạng thái sách:");
-        int id = input.nextInt();
+        int id = Integer.parseInt(input.nextLine());
         for (Book book : list) {
             if (book.getBookId() == id) {
                 book.setStatus(!book.getStatus());
@@ -110,7 +110,7 @@ public class BookManagement {
         int count;
         count = Integer.parseInt(sc.nextLine());
         for (int i = 0; i < count; i++) {
-            System.out.println("Nhập sách thứ " + i+1);
+            System.out.println("Nhập sách thứ " + (i + 1));
             Book newBook = new Book() {
                 @Override
                 public int compareTo(Book o) {

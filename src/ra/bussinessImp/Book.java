@@ -105,7 +105,7 @@ public abstract class Book implements IBook , Comparable<Book> {
         this.importPrice = Float.parseFloat(sc.nextLine());
         System.out.println("Nhập giá bán sách : ");
         this.exportPrice = Float.parseFloat(sc.nextLine());
-        System.out.printf("trạng thái sách: %s\n", status ? "bán" : "không bán");
+        System.out.println("Nhaajp trjang thasi sacsh");
         this.status = Boolean.parseBoolean(sc.nextLine());
 
 
